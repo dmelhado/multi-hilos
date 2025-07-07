@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/servicios.css">
+    <link rel="stylesheet" href="resources/css/resenyas.css">
+    <link rel="stylesheet" href="resources/css/nav.css">
+    <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="resources/css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi hilos</title>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="resources/images/logo.png" alt="Logo" width="150">
+            <h1>Multi hilos <span>| Ropa, joyas y tecnología</span></h1>
+            <span id="contador-carrito"><a href="carrito.html">🛒 (0)</a></span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="servicios">
+            <h1>
+                Productos
+            </h1>
+            <div class="contenedor-servicios" id="contenedor-servicios"></div>
+
+        </section>
+
+        <section class="resenyas">
+            <h1>Reseñas</h1>
+            <div class="grid-resenyas">
+                <div class="card-resenya">
+                    <p>"Excelente atención y servicio. Recomendado 100%!"</p>
+                    <span>- Lucía M.</span>
+                </div>
+                <div class="card-resenya">
+                    <p>"Me arreglaron el celular en el día, ¡una genia la gente de Telex!"</p>
+                    <span>- Juan P.</span>
+                </div>
+                <div class="card-resenya">
+                    <p>"Muy buena onda y precios razonables. Volvería sin dudas."</p>
+                    <span>- Carla R.</span>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Telex Reparaciones. Todos los derechos reservados.</p>
+                <p>📍 Pilar, Buenos Aires — 📞 (011) 1234-5678</p>
+                <p><a href="mailto:contacto@telex.com.ar">contacto@telex.com.ar</a></p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/productos.js"></script>
+    <script>
+        actualizarContadorCarrito();
+    </script>
+
+</body>
+
+</html>

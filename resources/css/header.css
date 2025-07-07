@@ -1,0 +1,21 @@
+.header {
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.header-content h1 span {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
