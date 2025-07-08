@@ -1,0 +1,59 @@
+.contenedor-detalle {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.left {
+  flex: 1; /* Takes up half */
+  padding: 1rem;
+}
+
+.right {
+  flex: 1; /* Takes up the other half */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Optional: center vertically */
+}
+
+.cantidad-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+      display: block;     /* Ensures margin auto works */
+    margin: 1rem auto; 
+}
+
+.cantidad-wrapper select {
+  max-width: 100px;
+}
+
+h3 {
+    display: block;     /* Ensures margin auto works */
+    margin: 1rem auto; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+    max-width: 250px;
+    display: block;     /* Ensures margin auto works */
+    margin: 1rem auto; 
+}
+
+@media (max-width: 768px) {
+  .contenedor-detalle {
+    flex-direction: column;
+  }
+  
+  .left,
+  .right {
+    flex: none;   /* cancel flex:1 */
+    width: 100%;  /* full width */
+  }
+}

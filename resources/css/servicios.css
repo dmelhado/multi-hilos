@@ -6,6 +6,12 @@
     padding: 20px;
 }
 
+.servicios h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
 .servicios-card {
     background-color: #94a4ac;
     border: solid #1c1c24;

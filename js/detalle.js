@@ -12,18 +12,23 @@ async function mostrarDetalle(id) {
     }
 
     const detalleCard = `
-        <div class="detalle-card">
-          <h2>${fetchedItem.title}</h2>
-          <img src="${fetchedItem.image}" alt="${fetchedItem.title}">
-          <detail>${fetchedItem.description}</detail>
-          <h3>Precio por unidad: $${fetchedItem.price}</h3>
+        <div class="left">
+            <img src="${fetchedItem.image}" alt="${fetchedItem.title}">
+        </div>
+        
+        <div class="right">
+            <h2>${fetchedItem.title}</h2>
+            <detail>${fetchedItem.description}</detail>
+            <h3>Precio por unidad: $${fetchedItem.price}</h3>
 
-          <label for="cantidad">Cantidad:</label>
-          <select id="cantidad">
-            ${cantidades}
-          </select>
+            <div class="cantidad-wrapper">
+                <label for="cantidad">Cantidad:</label>
+                <select id="cantidad">
+                        ${cantidades}
+                </select>
+            </div>
 
-          <button id="agregar-carrito">Agregar al carrito</button>
+            <button id="agregar-carrito">Agregar al carrito</button>
         </div>
     `;
 

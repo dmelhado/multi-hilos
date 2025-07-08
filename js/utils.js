@@ -70,7 +70,7 @@ function mostrarCarrito() {
 
       const card = `
       <div class="carrito-card">
-        <div>
+        <div class="image-container">
           <img src="${producto.image}" alt="${producto.title}">
         </div>
         <h2>${producto.title}</h2>

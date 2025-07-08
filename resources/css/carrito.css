@@ -22,3 +22,17 @@
     margin: auto;
     max-height: 1in;
 }
+
+@media (max-width: 768px) {
+  .carrito-card {
+    flex-direction: column;
+    align-items: center; /* <-- centers all contents */
+    text-align: center;
+  }
+
+  .carrito-card img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+  }
+}
