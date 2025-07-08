@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="resources/css/styles.css">
     <link rel="stylesheet" href="resources/css/nav.css">
     <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="resources/css/contacto.css">
     <link rel="stylesheet" href="resources/css/footer.css">
-    <link rel="stylesheet" href="resources/css/nosotros.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telex Reparaciones</title>
 </head>
@@ -30,22 +30,15 @@
         </ul>
     </nav>
     <main>
-        <section class="sobre-nosotros">
-            <h1>Sobre Nosotros</h1>
-
-            <iframe
-                src="https://www.youtube.com/embed/cTICXSBXC3Q?autoplay=1&mute=1&loop=1&playlist=cTICXSBXC3Q&controls=0&disablekb=1&modestbranding=1&rel=0"
-                frameborder="0" allow="autoplay" allowfullscreen style="pointer-events: none;" width="560" height="315">
-            </iframe>
-
-            <div class="contenido-sobre-nosotros">
-                <p>En <strong>Telex Reparaciones</strong> nos dedicamos con pasión al servicio técnico de celulares,
-                    consolas, y dispositivos electrónicos desde hace más de 5 años. Nuestra misión es ofrecer soluciones
-                    rápidas, confiables y accesibles, siempre con una atención cercana y personalizada.</p>
-                <p>Comenzamos como un emprendimiento de barrio y hoy somos una referencia en la zona gracias a la
-                    confianza de nuestros clientes. Ya sea para una reparación urgente, una consulta técnica o una
-                    compra, ¡acá estamos para ayudarte!</p>
-            </div>
+        <section class="contenedor-detalle" id="contenedor-detalle">
+            <script src="./js/utils.js"></script>
+            <script src="./js/detalle.js"></script>
+            <script>
+                const params = new URLSearchParams(window.location.search);
+                const itemId = params.get('id');
+                console.log(itemId);
+                mostrarDetalle(itemId);
+            </script>
         </section>
 
         <footer class="footer">
@@ -57,7 +50,7 @@
         </footer>
 
     </main>
-    <script src="./js/utils.js"></script>
+
     <script>
         actualizarContadorCarrito();
     </script>

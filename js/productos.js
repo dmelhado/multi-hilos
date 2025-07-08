@@ -5,12 +5,13 @@ fetch('https://fakestoreapi.com/products')
     const contenedor = document.getElementById("contenedor-servicios");
     data.forEach(producto => {
       const productoCard = `
+        <a href="detalle.html?id=${producto.id}" class="card-link">
         <div class="servicios-card">
           <h2>${producto.title}</h3>
           <img src="${producto.image}" alt="${producto.title}">
           <h3>Precio: $${producto.price}</h3>
-          <button onclick="agregarAlCarrito(${producto.id})">Añadir al carrito</button>
-        </div>`;
+        </div>
+        </a>`;
       contenedor.innerHTML += productoCard;
     });
   });

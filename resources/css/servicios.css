@@ -54,3 +54,8 @@
     margin-top: auto;
     margin-bottom: 8px;
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
