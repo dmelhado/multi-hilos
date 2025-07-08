@@ -38,7 +38,7 @@ function actualizarContadorCarrito() {
 
   const elem = document.getElementById("contador-carrito");
   if (elem) {
-    elem.innerHTML = `<a href="carrito.html">🛒 (${total})</a>`;
+    elem.innerHTML = `<a href="carrito.html" class="contador-carrito">🛒 (${total})</a>`;
   }
 }
 

@@ -29,7 +29,7 @@
   max-width: 100px;
 }
 
-h3 {
+.right h3 {
     display: block;     /* Ensures margin auto works */
     margin: 1rem auto; 
 }
@@ -54,6 +54,6 @@ button {
   .left,
   .right {
     flex: none;   /* cancel flex:1 */
-    width: 100%;  /* full width */
+    width: 95%;  /* full width */
   }
 }
