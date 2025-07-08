@@ -7,32 +7,32 @@
     padding: 20px;
 }
 
-.carrito-card{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background-color: #f9f9f9;
-  padding: 0.75rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.carrito-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.carrito-card img{
+.carrito-card img {
     display: block;
     margin: auto;
     max-height: 1in;
 }
 
 @media (max-width: 768px) {
-  .carrito-card {
-    flex-direction: column;
-    align-items: center; /* <-- centers all contents */
-    text-align: center;
-  }
+    .carrito-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-  .carrito-card img {
-    max-width: 100px;
-    height: auto;
-    display: block;
-  }
+    .carrito-card img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+    }
 }

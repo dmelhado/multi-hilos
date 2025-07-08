@@ -32,9 +32,8 @@ async function mostrarDetalle(id) {
         </div>
     `;
 
-    contenedor.innerHTML = detalleCard;  // Use = instead of += to avoid duplicates
-
-    // Now the button exists, attach the event listener here:
+    contenedor.innerHTML = detalleCard;  
+    
     document.getElementById("agregar-carrito").addEventListener("click", () => {
         const cantidad = parseInt(document.getElementById("cantidad").value);
         const id = fetchedItem.id;

@@ -21,21 +21,21 @@
 }
 
 .home {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 
 .contador-carrito {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  background-color: rgba(205, 209, 214, 0.596);     /* dark button background */
-  color: #000000;                /* white text */
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.95rem;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(205, 209, 214, 0.596);
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
 }

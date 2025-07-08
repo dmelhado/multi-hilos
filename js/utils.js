@@ -26,7 +26,7 @@ function eliminarDelCarrito(id) {
   if (index !== -1) {
     carrito.splice(index, 1);
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    mostrarCarrito(); // refresh the view
+    mostrarCarrito();
   }
 }
 
@@ -82,9 +82,9 @@ function mostrarCarrito() {
           actualizarContadorCarrito();
         ">
           ${[...Array(10).keys()].map(i => {
-            const val = i + 1;
-            return `<option value="${val}" ${val == cantidad ? 'selected' : ''}>${val}</option>`;
-          }).join("")}
+        const val = i + 1;
+        return `<option value="${val}" ${val == cantidad ? 'selected' : ''}>${val}</option>`;
+      }).join("")}
         </select>
 
         <h3>Precio por unidad: $${producto.price.toFixed(2)}</h3>
@@ -95,7 +95,7 @@ function mostrarCarrito() {
     });
     actualizarSubtotal()
   });
-  
+
 }
 
 function actualizarSubtotal() {

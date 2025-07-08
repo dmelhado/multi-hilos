@@ -24,9 +24,9 @@
 
     display: flex;
     align-items: center;
-    height: 6in; /* Adjust to fit your layout */
+    height: 6in;
     box-sizing: border-box;
-    
+
 }
 
 .servicios-card h1 {
@@ -54,7 +54,7 @@
     max-height: 3in;
 }
 
-.servicios-card button{
+.servicios-card button {
     display: block;
     margin: auto;
     margin-top: auto;
@@ -62,6 +62,6 @@
 }
 
 .card-link {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
